@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form-Validation</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="main.js" defer></script>
+</head>
+<body>
+   <div class="main">
+      <h1>Fill form</h1>
+      <form action="" action="https://przeprogramowani.pl/projekt-walidacja" id="form">
+         <div class="form name">
+            <span class="error-text name">Niepoprawny nick!</span>
+            <input id="name" type="text" placeholder="Name">
+         </div>
+         
+         <div class="form email">
+            <span class="error-text email">Niepoprawny adres email!</span>
+            <input id="email" type="text" placeholder="Email">
+         </div>
+
+         <div class="form password">
+            <span class="error-text password">Zbyt słabe hasło!</span>
+            <input id="password" type="text" placeholder="Password">
+         </div>
+
+         <div class="form confirm-password">
+            <span class="error-text password">Hasła się nie pokrywają!</span>
+            <input id="confirm-password" type="text" placeholder="Confirm password">
+         </div>
+
+         <div class="form rodo">
+            <span class="error-text">Zaznacz zgodę!</span>
+            <span>RODO</span>
+            <input id="rodo" type="checkbox">
+         </div>
+
+         <div class="form submit">
+            <button id="submit" type="submit">Submit</button>
+         </div>
+         </form>
+   </div>
+</body>
+</html>
