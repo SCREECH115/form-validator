@@ -11,34 +11,44 @@
    <div class="main">
       <h1>Fill form</h1>
       <form action="" action="https://przeprogramowani.pl/projekt-walidacja" id="form">
+
+         <span class="succesfull">Successfully registered!</span>
+
          <div class="form name">
-            <span class="error-text name">Niepoprawny nick!</span>
+            <span class="error-text name">Invalid nickname!</span>
             <input id="name" type="text" placeholder="Name">
          </div>
          
          <div class="form email">
-            <span class="error-text email">Niepoprawny adres email!</span>
+            <span class="error-text email">Invalid e-mail address!</span>
             <input id="email" type="text" placeholder="Email">
          </div>
 
          <div class="form password">
-            <span class="error-text password">Zbyt słabe hasło!</span>
+            <span class="error-text password">Password is too weak!</span>
             <input id="password" type="text" placeholder="Password">
+              
+            
          </div>
 
          <div class="form confirm-password">
-            <span class="error-text password">Hasła się nie pokrywają!</span>
+            <span class="error-text confirmPassword">Passwords do not match!</span>
             <input id="confirm-password" type="text" placeholder="Confirm password">
          </div>
 
          <div class="form rodo">
-            <span class="error-text">Zaznacz zgodę!</span>
-            <span>RODO</span>
+            <span class="error-text checkbox">Tick consent!</span>
+            <span class="rodo-span">RODO</span>
             <input id="rodo" type="checkbox">
          </div>
 
          <div class="form submit">
             <button id="submit" type="submit">Submit</button>
+         </div>
+
+         <div class="password-show">
+            <input id="show-password-toggle" type="checkbox">
+            <label for="show-password-toggle"><span class="show-password-text">Show password</span></label>
          </div>
          </form>
    </div>
